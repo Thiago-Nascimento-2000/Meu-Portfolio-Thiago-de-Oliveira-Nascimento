@@ -1,8 +1,8 @@
 import Image from "next/image";
-import Nav from "../_components/nav/Nav";
+import Nav from "./_components/nav/Nav";
 import { IoMdArrowForward } from "react-icons/io";
 
-import wallpaperHero from "../public/background-hero.png";
+import wallpaperHero from "../../public/background-hero.png";
 
 const Hero = () => {
   return (
