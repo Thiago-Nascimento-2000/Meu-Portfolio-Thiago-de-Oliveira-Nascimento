@@ -6,10 +6,12 @@ const Nav = () => {
   return (
     <Card.Container>
       <Card.Nav>
-        <Card.NavLogo srcImage={logo} altImage="sss" />
-        <Card.ContainerLinks>
-          <Card.LinksNav />
-        </Card.ContainerLinks>
+        <Card.ContainerNav>
+          <Card.NavLogo srcImage={logo} altImage="sss" />
+          <Card.ContainerLinks>
+            <Card.LinksNav />
+          </Card.ContainerLinks>
+        </Card.ContainerNav>
         <Card.ContainerButtonNav>
           <Card.Button textButton="Contatos" />
           <Card.Button textButton="Download CV" />

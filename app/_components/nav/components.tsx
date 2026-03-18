@@ -4,7 +4,7 @@ import Image from "next/image";
 type ContainerProps = { children: React.ReactNode };
 export const Container = ({ children }: ContainerProps) => {
   return (
-    <div className="bg-[#222C3C] px-1 pt-1 pb-2 flex rounded-[20px] w-[747px] h-fit z-200 absolute top-0 mt-4">
+    <div className="bg-[#222C3C] px-1 pt-1 pb-2 flex rounded-[20px] w-fit h-fit z-200 absolute top-0 mt-4">
       {children}
     </div>
   );
@@ -20,11 +20,17 @@ export const Nav = ({ children }: ContainerProps) => {
   );
 };
 
+// Container Nav
+type ContainerNavProps = { children: React.ReactNode };
+export const ContainerNav = ({ children }: ContainerNavProps) => {
+  return <div className="flex gap-2">{children}</div>;
+};
+
 // Logo Nav
 type NavLogoProps = { srcImage: string; altImage: string };
 export const NavLogo = ({ srcImage, altImage }: NavLogoProps) => {
   return (
-    <div className="flex items-center gap-4">
+    <div className="flex items-center gap-2">
       <Image src={srcImage} alt={altImage} width={70} height={70} />
       <span className="text-2xl">|</span>
     </div>
@@ -56,7 +62,10 @@ const links: linksType[] = [
 export const LinksNav = () => {
   return links.map((link) => (
     <li className="flex justify-center items-center" key={link.index}>
-      <a className="text-[18px]" href={link.link}>
+      <a
+        className="text-[18px] border-b-2 border-transparent hover:border-b-2 hover:border-[#4FB401]"
+        href={link.link}
+      >
         {link.link}
       </a>
     </li>
@@ -78,8 +87,8 @@ type buttonProps = {
 
 export const Button = ({ textButton }: buttonProps) => {
   return (
-    <div className="bg-[#222C3C] px-1 pb-2 pt-1 mt-1 rounded-[12px] flex gap-2 cursor-pointer">
-      <button className="bg-[#A5D872] p-2 w-fit h-[45px] rounded-[8px] md:text-[20px] font-semibold cursor-pointer hover:bg-[#94cc5b]">
+    <div className="bg-[#222C3C] px-1 pb-2 pt-1 rounded-[12px] flex gap-2 cursor-pointer">
+      <button className="bg-[#A5D872] flex items-center p-2 w-fit h-[40px] rounded-[8px] md:text-[20px] font-semibold cursor-pointer hover:bg-[#94cc5b] transition-all duration-150 shadow-md active:shadow-sm active:scale-95 active:translate-y-[2px]">
         {textButton}
       </button>
     </div>
