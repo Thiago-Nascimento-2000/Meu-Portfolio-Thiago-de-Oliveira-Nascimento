@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Nav from "../_components/nav/Nav";
 import { IoMdArrowForward } from "react-icons/io";
 
 import wallpaperHero from "../public/background-hero.png";
@@ -6,6 +7,7 @@ import wallpaperHero from "../public/background-hero.png";
 const Hero = () => {
   return (
     <div className="w-screen h-screen bg-black flex flex-col justify-center items-center z-50">
+      <Nav />
       <Image
         src={wallpaperHero}
         alt="wallpaper da sessao hero"
