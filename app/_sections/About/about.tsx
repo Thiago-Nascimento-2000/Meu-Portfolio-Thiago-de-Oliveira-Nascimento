@@ -1,22 +1,24 @@
 import Image from "next/image";
 
 import perfil from "../../public/perfil.png";
-import personagem1 from "../../public/personagem1.png";
-import personagem2 from "../../public/personagem2.png";
+import personagem1 from "../../public/personagem1.webp";
+import personagem2 from "../../public/personagem2.webp";
 
 const About = () => {
   return (
     <div className="w-screen bg-black flex flex-col justify-center items-center relative pb-24">
       <div className="absolute w-[150px] h-[150px] bg-[#A5D872] opacity-100 blur-[120px] rounded-full top-[40%] left-[70%] z-110"></div>
       <Image
-        className="relative top-[600px] right-[160px] md:top-[600px] md:right-[160px] lg:top-[640px] lg:right-[450px]"
+        className="relative top-[540px] right-[160px] md:top-[540px] md:right-[160px] lg:top-[570px] lg:right-[450px]"
         src={personagem1}
         alt="personagem 1 em desenho segurando lampada e notebook"
+        width={80}
       />
       <Image
-        className="relative top-[170px] left-[170px] md:top-[170px] md:left-[170px] lg:top-[200px] lg:left-[-120px]"
+        className="relative top-[150px] left-[150px] md:top-[150px] md:left-[150px] lg:top-[185px] lg:left-[-135px]"
         src={personagem2}
         alt="personagem 2 acenando"
+        width={80}
       />
       <h2 className="text-[#A5D872] font-bold text-3xl">Sobre Mim</h2>
       <h2 className="text-white font-semibold text-[18px]">
