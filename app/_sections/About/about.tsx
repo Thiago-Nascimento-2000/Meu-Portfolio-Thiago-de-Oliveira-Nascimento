@@ -12,13 +12,13 @@ const About = () => {
         className="relative top-[540px] right-[160px] md:top-[540px] md:right-[160px] lg:top-[570px] lg:right-[450px]"
         src={personagem1}
         alt="personagem 1 em desenho segurando lampada e notebook"
-        width={80}
+        width={90}
       />
       <Image
         className="relative top-[150px] left-[150px] md:top-[150px] md:left-[150px] lg:top-[185px] lg:left-[-135px]"
         src={personagem2}
         alt="personagem 2 acenando"
-        width={80}
+        width={90}
       />
       <h2 className="text-[#A5D872] font-bold text-3xl">Sobre Mim</h2>
       <h2 className="text-white font-semibold text-[18px]">
