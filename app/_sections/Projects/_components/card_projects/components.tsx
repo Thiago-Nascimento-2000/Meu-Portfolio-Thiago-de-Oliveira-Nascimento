@@ -51,10 +51,12 @@ const tagstype: Record<string, string> = {
 type TagProps = { tagname: string };
 export const Tag = ({ tagname }: TagProps) => {
   return (
-    <span className="w-fit h-[24px] px-2 mt-2 bg-[#A5D872] flex justify-center items-center rounded-[5px]">
-      <h2 className="text-black text-[13px] font-semibold uppercase">
-        {tagname}
-      </h2>
-    </span>
+    <div className="bg-[#222C3C] px-0.5 pt-0.5 pb-1 rounded-[8px]">
+      <span className="w-fit h-[24px] px-2 bg-[#A5D872] flex justify-center items-center rounded-[5px]">
+        <h2 className="text-black text-[13px] font-semibold uppercase">
+          {tagname}
+        </h2>
+      </span>
+    </div>
   );
 };

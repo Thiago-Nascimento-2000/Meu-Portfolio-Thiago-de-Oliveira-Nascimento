@@ -8,7 +8,7 @@ const Skills = () => {
       <div className="flex flex-col gap-12 justify-center items-center">
         <div className="flex flex-col w-[310px] md:w-[650px]">
           <h2 className="text-[#A5D872] text-[32px] font-bold text-left">
-            skills
+            Skills
           </h2>
           <h2 className="text-white text-[20px] font-bold">
             Proficiência nas seguintes ferramentas e linguagens...

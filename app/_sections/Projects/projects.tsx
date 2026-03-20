@@ -15,7 +15,7 @@ const Projects = () => {
       <div className="absolute w-[120px] h-[100px] bg-[#A5D872] opacity-100 blur-[100px] rounded-full top-[75%] left-[75%] z-10"></div>
 
       <Image
-        className="mb-16 w-[400px] md:w-[650px]"
+        className="mb-16 w-[350px] md:w-[600px]"
         src={titleProjetos}
         alt="titulo escrito projetos"
       />
@@ -23,37 +23,37 @@ const Projects = () => {
         <CardProjects
           src={imagemprojeto1}
           alt=""
-          title="MECANISMO DE BUSCA"
+          title="DEFAULT"
           description="descricao.."
         />
         <CardProjects
           src={imagemprojeto2}
           alt=""
-          title="MECANISMO DE BUSCA"
+          title="DEFAULT"
           description="descricao.."
         />
         <CardProjects
           src={imagemprojeto3}
           alt=""
-          title="MECANISMO DE BUSCA"
+          title="DEFAULT"
           description="descricao.."
         />
         <CardProjects
           src={imagemprojeto4}
           alt=""
-          title="MECANISMO DE BUSCA"
+          title="DEFAULT"
           description="descricao.."
         />
         <CardProjects
           src={imagemprojeto1}
           alt=""
-          title="MECANISMO DE BUSCA"
+          title="DEFAULT"
           description="descricao.."
         />
         <CardProjects
           src={imagemprojeto5}
           alt=""
-          title="MECANISMO DE BUSCA"
+          title="DEFAULT"
           description="descricao.."
         />
       </div>
