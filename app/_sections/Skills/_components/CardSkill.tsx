@@ -1,7 +1,8 @@
+import { StaticImageData } from "next/image";
 import * as Card from "./components";
 
 type CardSkillProps = {
-  src: string;
+  src: string | StaticImageData;
   alt: string;
 };
 const CardSkill = ({ src, alt }: CardSkillProps) => {

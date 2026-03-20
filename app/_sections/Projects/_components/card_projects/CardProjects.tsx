@@ -1,7 +1,8 @@
-import * as dd from "./components";
+import { StaticImageData } from "next/image";
+import * as Card from "./components";
 
 type CardProjectsProps = {
-  src: string;
+  src: string | StaticImageData;
   alt: string;
   title: string;
   description: string;
@@ -9,17 +10,17 @@ type CardProjectsProps = {
 
 const CardProjects = ({ src, alt, title, description }: CardProjectsProps) => {
   return (
-    <dd.Container>
-      <dd.CardImage src={src} alt={alt} width={300} height={172} />
-      <dd.ContainerContente>
-        <dd.Title title={title} />
-        <dd.Description description={description} />
+    <Card.Container>
+      <Card.CardImage src={src} alt={alt} width={300} height={172} />
+      <Card.ContainerContente>
+        <Card.Title title={title} />
+        <Card.Description description={description} />
         <div className="flex gap-2">
-          <dd.Tag tagname="css" />
-          <dd.Tag tagname="next js" />
+          <Card.Tag tagname="css" />
+          <Card.Tag tagname="next js" />
         </div>
-      </dd.ContainerContente>
-    </dd.Container>
+      </Card.ContainerContente>
+    </Card.Container>
   );
 };
 

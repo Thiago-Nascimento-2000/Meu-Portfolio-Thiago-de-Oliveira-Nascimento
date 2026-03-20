@@ -7,7 +7,7 @@ const Nav = () => {
     <Card.Container>
       <Card.Nav>
         <Card.ContainerNav>
-          <Card.NavLogo srcImage={logo} altImage="sss" />
+          <Card.NavLogo src={logo} alt="sss" />
           <Card.ContainerLinks>
             <Card.LinksNav />
           </Card.ContainerLinks>

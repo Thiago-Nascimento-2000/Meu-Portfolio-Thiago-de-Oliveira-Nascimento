@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
 // Container
 type ContainerProps = { children: React.ReactNode };
@@ -27,11 +27,11 @@ export const ContainerNav = ({ children }: ContainerNavProps) => {
 };
 
 // Logo Nav
-type NavLogoProps = { srcImage: string; altImage: string };
-export const NavLogo = ({ srcImage, altImage }: NavLogoProps) => {
+type NavLogoProps = { src: string | StaticImageData; alt: string };
+export const NavLogo = ({ src, alt }: NavLogoProps) => {
   return (
     <div className="flex items-center gap-2">
-      <Image src={srcImage} alt={altImage} width={70} height={70} />
+      <Image src={src} alt={alt} width={70} height={70} />
       <span className="text-2xl">|</span>
     </div>
   );

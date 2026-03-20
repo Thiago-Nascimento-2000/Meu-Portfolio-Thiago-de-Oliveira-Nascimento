@@ -2,7 +2,11 @@ import Image from "next/image";
 import CardProjects from "./_components/card_projects/CardProjects";
 
 import titleProjetos from "../../public/titleprojetos.png";
-import imagemprojeto from "../../public/projeto1.png";
+import imagemprojeto1 from "../../public/projeto1.png";
+import imagemprojeto2 from "../../public/projeto2.png";
+import imagemprojeto3 from "../../public/projeto3.png";
+import imagemprojeto4 from "../../public/projeto4.png";
+import imagemprojeto5 from "../../public/projeto5.png";
 
 const Projects = () => {
   return (
@@ -16,37 +20,37 @@ const Projects = () => {
       />
       <div className="w-full h-full gap-8 justify-center flex flex-wrap">
         <CardProjects
-          src={imagemprojeto}
+          src={imagemprojeto1}
           alt=""
           title="MECANISMO DE BUSCA"
           description="descricao.."
         />
         <CardProjects
-          src={imagemprojeto}
+          src={imagemprojeto2}
           alt=""
           title="MECANISMO DE BUSCA"
           description="descricao.."
         />
         <CardProjects
-          src={imagemprojeto}
+          src={imagemprojeto3}
           alt=""
           title="MECANISMO DE BUSCA"
           description="descricao.."
         />
         <CardProjects
-          src={imagemprojeto}
+          src={imagemprojeto4}
           alt=""
           title="MECANISMO DE BUSCA"
           description="descricao.."
         />
         <CardProjects
-          src={imagemprojeto}
+          src={imagemprojeto1}
           alt=""
           title="MECANISMO DE BUSCA"
           description="descricao.."
         />
         <CardProjects
-          src={imagemprojeto}
+          src={imagemprojeto5}
           alt=""
           title="MECANISMO DE BUSCA"
           description="descricao.."

@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
 // Container Card
 type ContainerProps = { children: React.ReactNode };
@@ -11,7 +11,7 @@ export const Container = ({ children }: ContainerProps) => {
 };
 
 // Image
-type ImageSkilProps = { src: string; alt: string };
+type ImageSkilProps = { src: string | StaticImageData; alt: string };
 export const ImageSkil = ({ src, alt }: ImageSkilProps) => {
   return <Image src={src} alt={alt} width={60} height={60} />;
 };
