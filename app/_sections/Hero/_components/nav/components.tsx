@@ -31,7 +31,7 @@ type NavLogoProps = { src: string | StaticImageData; alt: string };
 export const NavLogo = ({ src, alt }: NavLogoProps) => {
   return (
     <div className="flex items-center gap-2">
-      <Image src={src} alt={alt} width={70} height={70} />
+      <Image src={src} alt={alt} width={90} />
       <span className="text-2xl">|</span>
     </div>
   );

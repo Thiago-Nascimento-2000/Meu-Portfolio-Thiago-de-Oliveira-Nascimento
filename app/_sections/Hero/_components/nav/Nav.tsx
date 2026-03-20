@@ -1,6 +1,6 @@
 import * as Card from "./components";
 
-import logo from "../../../../public/logo.png";
+import logo from "../../../../public/logo.webp";
 
 const Nav = () => {
   return (
