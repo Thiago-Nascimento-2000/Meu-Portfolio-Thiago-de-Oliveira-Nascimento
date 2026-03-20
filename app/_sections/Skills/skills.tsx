@@ -7,6 +7,8 @@ const Skills = () => {
     <div className="w-screen h-screen bg-black flex flex-col justify-center items-center relative">
       <div className="absolute w-[110px] h-[90px] bg-[#A5D872] opacity-100 blur-[85px] rounded-full top-[30%] left-[80%] z-110"></div>
       <div className="absolute w-[90px] h-[90px] bg-[#A5D872] opacity-100 blur-[80px] rounded-full top-[70%] left-[10%] z-110"></div>
+      <div className="absolute w-[90px] h-[90px] bg-[#A5D872] opacity-100 blur-[80px] rounded-full top-[20%] left-[30%] z-110"></div>
+
       <div className="flex flex-col gap-12 justify-center items-center">
         <div className="flex flex-col w-[310px] md:w-[650px]">
           <h2 className="text-[#A5D872] text-[32px] font-bold text-left">
