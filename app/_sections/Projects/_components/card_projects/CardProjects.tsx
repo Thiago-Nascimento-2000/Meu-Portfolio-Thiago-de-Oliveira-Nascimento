@@ -1,23 +1,32 @@
 import { StaticImageData } from "next/image";
 import * as Card from "./components";
 
+type TagType = "css" | "html" | "javascript" | "nextjs";
+
 type CardProjectsProps = {
   src: string | StaticImageData;
   alt: string;
   title: string;
   description: string;
+  tags: TagType[];
 };
-
-const CardProjects = ({ src, alt, title, description }: CardProjectsProps) => {
+const CardProjects = ({
+  src,
+  alt,
+  title,
+  description,
+  tags,
+}: CardProjectsProps) => {
   return (
     <Card.Container>
-      <Card.CardImage src={src} alt={alt} width={300} height={172} />
+      <Card.CardImage src={src} alt={alt} />
       <Card.ContainerContente>
         <Card.Title title={title} />
         <Card.Description description={description} />
-        <div className="flex gap-2">
-          <Card.Tag tagname="css" />
-          <Card.Tag tagname="next js" />
+        <div className="flex gap-2 flex-wrap">
+          {tags.map((tag) => (
+            <Card.Tag key={tag} tagname={tag} />
+          ))}
         </div>
       </Card.ContainerContente>
     </Card.Container>

@@ -14,11 +14,16 @@ export const Container = ({ children }: ContainerProps) => {
 type CardImage = {
   src: string | StaticImageData;
   alt: string;
-  width: number;
-  height: number;
 };
-export const CardImage = ({ src, width, height, alt }: CardImage) => {
-  return <Image src={src} alt={alt} width={width} height={height} />;
+export const CardImage = ({ src, alt }: CardImage) => {
+  return (
+    <Image
+      className="rounded-[18px] w-[300px] h-[200px] object-cover object-top z-180"
+      src={src}
+      alt={alt}
+      width={300}
+    />
+  );
 };
 
 // Container Contente
@@ -40,21 +45,25 @@ export const Description = ({ description }: DescriptionProps) => {
 };
 
 // Tag Stack
-const tagstype: Record<string, string> = {
+type TagType = "css" | "html" | "javascript" | "nextjs";
+
+const tagLabels: Record<TagType, string> = {
   css: "CSS",
   html: "HTML",
   javascript: "JAVASCRIPT",
-  nextjs: "NEXTJS",
-  default: "DEFAULT",
+  nextjs: "NEXT JS",
 };
 
-type TagProps = { tagname: string };
+type TagProps = {
+  tagname: TagType;
+};
+
 export const Tag = ({ tagname }: TagProps) => {
   return (
-    <div className="bg-[#222C3C] px-0.5 pt-0.5 pb-1 rounded-[8px]">
+    <div className="bg-[#222C3C] px-0.5 pt-0.5 pb-1 rounded-[8px] mt-4">
       <span className="w-fit h-[24px] px-2 bg-[#A5D872] flex justify-center items-center rounded-[5px]">
         <h2 className="text-black text-[13px] font-semibold uppercase">
-          {tagname}
+          {tagLabels[tagname]}
         </h2>
       </span>
     </div>
