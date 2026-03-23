@@ -35,7 +35,7 @@ export const ContainerContente = ({ children }: ContainerContenteProps) => {
 // Title Card
 type TitleProps = { title: string };
 export const Title = ({ title }: TitleProps) => {
-  return <h2 className="text-white uppercase">{title}</h2>;
+  return <h2 className="text-white uppercase font-semibold">{title}</h2>;
 };
 
 // Description Card
@@ -45,13 +45,21 @@ export const Description = ({ description }: DescriptionProps) => {
 };
 
 // Tag Stack
-type TagType = "css" | "html" | "javascript" | "nextjs";
+type TagType =
+  | "css"
+  | "html"
+  | "javascript"
+  | "nextjs"
+  | "reactjs"
+  | "tailwindcss";
 
 const tagLabels: Record<TagType, string> = {
   css: "CSS",
   html: "HTML",
   javascript: "JAVASCRIPT",
   nextjs: "NEXT JS",
+  reactjs: "REACT JS",
+  tailwindcss: "TAILWINDCSS",
 };
 
 type TagProps = {

@@ -3,7 +3,7 @@ import CardProjects from "./_components/card_projects/CardProjects";
 
 import titleProjetos from "../../public/titleprojetos.png";
 import imagemprojeto1 from "../../public/screencapture-pokedextor-vercel-app-2026-03-20-12_57_25.png";
-import imagemprojeto2 from "../../public/projeto2.png";
+import imagemprojeto2 from "../../public/ncmfinder.png";
 import imagemprojeto3 from "../../public/projeto3.png";
 import imagemprojeto4 from "../../public/projeto4.png";
 import imagemprojeto5 from "../../public/projeto5.png";
@@ -23,44 +23,16 @@ const Projects = () => {
         <CardProjects
           src={imagemprojeto1}
           alt=""
-          title="DEFAULT"
-          description="descricao.."
+          title="Pokedextor"
+          description="Site para consulta de pokemons usando api PokeApi..."
           tags={["css"]}
         />
         <CardProjects
           src={imagemprojeto2}
           alt=""
-          title="DEFAULT"
-          description="descricao.."
+          title="NCM Finder"
+          description="Realiza consultas de ncm no portal da siscomex.."
           tags={["css", "html"]}
-        />
-        <CardProjects
-          src={imagemprojeto3}
-          alt=""
-          title="DEFAULT"
-          description="descricao.."
-          tags={["css"]}
-        />
-        <CardProjects
-          src={imagemprojeto4}
-          alt=""
-          title="DEFAULT"
-          description="descricao.."
-          tags={["css"]}
-        />
-        <CardProjects
-          src={imagemprojeto1}
-          alt=""
-          title="DEFAULT"
-          description="descricao.."
-          tags={["css"]}
-        />
-        <CardProjects
-          src={imagemprojeto5}
-          alt=""
-          title="DEFAULT"
-          description="descricao.."
-          tags={["css"]}
         />
       </div>
     </div>
