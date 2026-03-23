@@ -4,9 +4,8 @@ import CardProjects from "./_components/card_projects/CardProjects";
 import titleProjetos from "../../public/titleprojetos.png";
 import imagemprojeto1 from "../../public/screencapture-pokedextor-vercel-app-2026-03-20-12_57_25.png";
 import imagemprojeto2 from "../../public/ncmfinder.png";
-import imagemprojeto3 from "../../public/projeto3.png";
-import imagemprojeto4 from "../../public/projeto4.png";
-import imagemprojeto5 from "../../public/projeto5.png";
+import imagemprojeto3 from "../../public/rydeon.png";
+import imagemprojeto4 from "../../public/agendaypro.png";
 
 const Projects = () => {
   return (
@@ -32,6 +31,20 @@ const Projects = () => {
           alt=""
           title="NCM Finder"
           description="Realiza consultas de ncm no portal da siscomex.."
+          tags={["css", "html"]}
+        />
+        <CardProjects
+          src={imagemprojeto3}
+          alt=""
+          title="Rydeon"
+          description="Agencia para desenvolvimento de sites em WordPress"
+          tags={["css", "html"]}
+        />
+        <CardProjects
+          src={imagemprojeto4}
+          alt=""
+          title="AgendayPro"
+          description="Saas para agendamento de servicos online.."
           tags={["css", "html"]}
         />
       </div>
