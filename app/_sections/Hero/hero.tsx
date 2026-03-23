@@ -17,9 +17,9 @@ const Hero = () => {
         className="w-full h-full absolute object-cover inset-0 z-100 opacity-10"
       />
       <div className="flex flex-col justify-center items-center relative">
-        <h2 className="text-white font-bold font-bebas text-5xl md:text-[96px] leading-non z-100">
+        <h1 className="text-white font-bold font-bebas text-5xl md:text-[96px] leading-non z-100">
           THIAGO DE O. NASCIMENTO
-        </h2>
+        </h1>
 
         <div className="bg-gradient-to-b from-black to-gray-800 border-3 border-white py-1 px-2 transform -rotate-4 absolute z-110">
           <span className="text-[#A5D872] font-bold md:text-3xl">
