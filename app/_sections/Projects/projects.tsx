@@ -7,8 +7,6 @@ import imagemprojeto2 from "../../public/ncmfinder.png";
 import imagemprojeto3 from "../../public/rydeon.png";
 import imagemprojeto4 from "../../public/agendaypro.png";
 
-import wallpaperHero from "../../public/background-hero.png";
-
 const Projects = () => {
   return (
     <div className="w-screen h-fit flex flex-col justify-center items-center bg-black relative">

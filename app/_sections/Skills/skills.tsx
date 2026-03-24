@@ -12,6 +12,7 @@ import logo_skills8 from "../../public/free-html-5-1-1175208 1.png";
 import logo_skills9 from "../../public/React-icon.svg 1.png";
 import logo_skills10 from "../../public/1691829400logo-canva-png 1.png";
 import logo_skills11 from "../../public/nodejs.png";
+import logo_skills12 from "../../public/styled-components 1.png";
 
 import wallpaperHero from "../../public/background-hero.png";
 
@@ -45,6 +46,7 @@ const Skills = () => {
           <CardSkill src={logo_skills7} alt="CSS" />
           <CardSkill src={logo_skills6} alt="TypeScript" />
           <CardSkill src={logo_skills4} alt="Tailwind CSS" />
+          <CardSkill src={logo_skills12} alt="Styled Components" />
           <CardSkill src={logo_skills5} alt="WordPress" />
           <CardSkill src={logo_skills3} alt="PhotoShop" />
           <CardSkill src={logo_skills10} alt="Canva" />

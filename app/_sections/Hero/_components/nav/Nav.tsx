@@ -7,7 +7,10 @@ const Nav = () => {
     <Card.Container>
       <Card.Nav>
         <Card.ContainerNav>
-          <Card.NavLogo src={logo} alt="sss" />
+          <Card.NavLogo
+            src={logo}
+            alt="Logo do portfolio do Thiago de Oliveira Nascimento"
+          />
           <Card.ContainerLinks>
             <Card.LinksNav />
           </Card.ContainerLinks>
