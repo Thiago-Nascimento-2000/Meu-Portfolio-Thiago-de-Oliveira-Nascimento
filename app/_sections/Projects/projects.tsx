@@ -24,28 +24,28 @@ const Projects = () => {
           alt=""
           title="Pokedextor"
           description="Site para consulta de pokemons usando api PokeApi..."
-          tags={["css"]}
+          tags={["reactjs", "tailwindcss", "usecontext", "fetchapi"]}
         />
         <CardProjects
           src={imagemprojeto2}
           alt=""
           title="NCM Finder"
           description="Realiza consultas de ncm no portal da siscomex.."
-          tags={["css", "html"]}
+          tags={["reactjs", "styledcomponents", "fetchapi"]}
         />
         <CardProjects
           src={imagemprojeto3}
           alt=""
           title="Rydeon"
           description="Agencia para desenvolvimento de sites em WordPress"
-          tags={["css", "html"]}
+          tags={["wordpress", "elementor"]}
         />
         <CardProjects
           src={imagemprojeto4}
           alt=""
           title="AgendayPro"
           description="Saas para agendamento de servicos online.."
-          tags={["css", "html"]}
+          tags={["nextjs", "tailwindcss", "redux", "axios", "prisma", "mysql"]}
         />
       </div>
     </div>

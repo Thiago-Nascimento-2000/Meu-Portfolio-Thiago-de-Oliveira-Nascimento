@@ -1,7 +1,24 @@
 import { StaticImageData } from "next/image";
 import * as Card from "./components";
 
-type TagType = "css" | "html" | "javascript" | "nextjs";
+type TagType =
+  | "css"
+  | "html"
+  | "javascript"
+  | "nextjs"
+  | "reactjs"
+  | "tailwindcss"
+  | "usecontext"
+  | "redux"
+  | "nodejs"
+  | "wordpress"
+  | "typescript"
+  | "styledcomponents"
+  | "elementor"
+  | "axios"
+  | "prisma"
+  | "mysql"
+  | "fetchapi";
 
 type CardProjectsProps = {
   src: string | StaticImageData;
