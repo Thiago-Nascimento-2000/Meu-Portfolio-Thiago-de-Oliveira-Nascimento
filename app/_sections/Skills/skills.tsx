@@ -18,7 +18,7 @@ import wallpaperHero from "../../public/background-hero.png";
 
 const Skills = () => {
   return (
-    <div className="w-screen h-screen bg-black flex flex-col justify-center items-center relative">
+    <section className="w-screen h-screen bg-black flex flex-col justify-center items-center relative">
       <Image
         src={wallpaperHero}
         alt="wallpaper da sessao hero"
@@ -59,7 +59,7 @@ const Skills = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

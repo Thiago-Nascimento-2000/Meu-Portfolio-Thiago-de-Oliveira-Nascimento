@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <div className="w-screen p-6  h-[150px] flex justify-center">
+    <footer className="w-screen p-6  h-[150px] flex justify-center">
       <div className="border-1 border-[#A5D872] rounded-[8px] w-[1388px] h-[110px] flex flex-col md:flex-row p-2 justify-between px-12 items-center">
         <div>
           <h2 className="text-white flex flex-col lg:flex-row">
@@ -14,7 +14,7 @@ const Footer = () => {
           <h2 className="text-white">© 2025 thiago.rydeon.com.br</h2>
         </div>
       </div>
-    </div>
+    </footer>
   );
 };
 

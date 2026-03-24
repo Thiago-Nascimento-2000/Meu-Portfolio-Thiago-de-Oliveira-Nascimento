@@ -6,7 +6,7 @@ import personagem2 from "../../public/personagem2.webp";
 
 const About = () => {
   return (
-    <div className="w-screen bg-black flex flex-col justify-center items-center relative pb-24">
+    <section className="w-screen bg-black flex flex-col justify-center items-center relative pb-24">
       <div className="absolute w-[150px] h-[150px] bg-[#a6f655] opacity-100 blur-[120px] rounded-full top-[40%] left-[70%] z-25"></div>
       <Image
         className="relative top-[540px] right-[160px] md:top-[540px] md:right-[160px] lg:top-[570px] lg:right-[450px]"
@@ -49,7 +49,7 @@ const About = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

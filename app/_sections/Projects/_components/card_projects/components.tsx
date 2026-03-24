@@ -17,12 +17,14 @@ type CardImage = {
 };
 export const CardImage = ({ src, alt }: CardImage) => {
   return (
-    <Image
-      className="rounded-[18px] w-[300px] h-[200px] object-cover object-top z-180"
-      src={src}
-      alt={alt}
-      width={300}
-    />
+    <div className="rounded-[18px] hover:cursor-pointer h-[200px] bg-[#222C3C]/50 object-cover object-top z-180 overflow-hidden">
+      <Image
+        className="transaction duration-4500 hover:translate-y-[-40%]"
+        src={src}
+        alt={alt}
+        width={300}
+      />
+    </div>
   );
 };
 

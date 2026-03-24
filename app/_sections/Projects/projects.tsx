@@ -9,7 +9,7 @@ import imagemprojeto4 from "../../public/agendaypro.png";
 
 const Projects = () => {
   return (
-    <div className="w-screen h-fit flex flex-col justify-center items-center bg-black relative">
+    <section className="w-screen h-fit flex flex-col justify-center items-center bg-black relative">
       <div className="absolute w-[150px] h-[350px] bg-[#446523] opacity-90 blur-[100px] rounded-full top-[10%] left-[15%] z-25"></div>
       <div className="absolute w-[120px] h-[110px] bg-[#95f635] opacity-100 blur-[100px] rounded-full top-[75%] left-[75%] z-25"></div>
 
@@ -48,7 +48,7 @@ const Projects = () => {
           tags={["nextjs", "tailwindcss", "redux", "axios", "prisma", "mysql"]}
         />
       </div>
-    </div>
+    </section>
   );
 };
 

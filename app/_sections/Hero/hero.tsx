@@ -6,7 +6,7 @@ import wallpaperHero from "../../public/background-hero.png";
 
 const Hero = () => {
   return (
-    <div className="w-screen h-[600px] md:h-screen bg-black flex flex-col justify-center items-center z-50">
+    <section className="w-screen h-[600px] md:h-screen bg-black flex flex-col justify-center items-center z-50">
       <div className="absolute w-[150px] h-[150px] bg-[#9fff3f] opacity-100 blur-[120px] rounded-full top-[20%] left-[10%] z-25"></div>
       <div className="absolute w-[100px] h-[100px] bg-[#82f510] opacity-100 blur-[80px] rounded-full top-[30%] left-[80%] z-25"></div>
       <div className="absolute w-[140px] h-[110px] bg-[#8ae62e] opacity-100 blur-[90px] rounded-full top-[50%] left-[40%] z-25"></div>
@@ -40,11 +40,14 @@ const Hero = () => {
         <button className="bg-[#A5D872] p-2 md:w-[143px] md:h-[50px] rounded-[8px] md:text-[20px] font-semibold cursor-pointer hover:bg-[#94cc5b] hover:bg-[#94cc5b] transition-all duration-150 shadow-md active:shadow-sm active:scale-95 active:translate-y-[2px]">
           SABER MAIS
         </button>
-        <button className="bg-[#A5D872] p-2 md:w-[50px] md:h-[50px] rounded-[8px] flex justify-center items-center cursor-pointer hover:bg-[#94cc5b] hover:bg-[#94cc5b] transition-all duration-150 shadow-md active:shadow-sm active:scale-95 active:translate-y-[2px]">
-          <IoMdArrowForward size={24} />
+        <button
+          className="bg-[#A5D872] p-2 md:w-[50px] md:h-[50px] rounded-[8px] flex justify-center items-center cursor-pointer hover:bg-[#94cc5b] hover:bg-[#94cc5b] transition-all duration-150 shadow-md active:shadow-sm active:scale-95 active:translate-y-[2px]"
+          aria-label="Botão para ir a sessão Sobre Mim"
+        >
+          <IoMdArrowForward size={24} aria-hidden={true} />
         </button>
       </div>
-    </div>
+    </section>
   );
 };
 
