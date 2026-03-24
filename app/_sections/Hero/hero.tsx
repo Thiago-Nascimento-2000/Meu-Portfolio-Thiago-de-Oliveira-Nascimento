@@ -7,14 +7,18 @@ import wallpaperHero from "../../public/background-hero.png";
 const Hero = () => {
   return (
     <div className="w-screen h-[600px] md:h-screen bg-black flex flex-col justify-center items-center z-50">
-      <div className="absolute w-[150px] h-[150px] bg-[#A5D872] opacity-100 blur-[120px] rounded-full top-[20%] left-[10%] z-110"></div>
-      <div className="absolute w-[100px] h-[100px] bg-[#A5D872] opacity-100 blur-[80px] rounded-full top-[30%] left-[80%] z-110"></div>
-      <div className="absolute w-[90px] h-[90px] bg-[#A5D872] opacity-100 blur-[90px] rounded-full top-[75%] left-[35%] z-110"></div>
+      <div className="absolute w-[150px] h-[150px] bg-[#9fff3f] opacity-100 blur-[120px] rounded-full top-[20%] left-[10%] z-25"></div>
+      <div className="absolute w-[100px] h-[100px] bg-[#82f510] opacity-100 blur-[80px] rounded-full top-[30%] left-[80%] z-25"></div>
+      <div className="absolute w-[140px] h-[110px] bg-[#8ae62e] opacity-100 blur-[90px] rounded-full top-[50%] left-[40%] z-25"></div>
+      <div className="absolute w-[140px] h-[110px] bg-[#8ae62e] opacity-75 blur-[90px] rounded-full top-[35%] left-[60%] z-25"></div>
+      <div className="absolute w-[100px] h-[100px] bg-[#82f510] opacity-100 blur-[80px] rounded-full top-[0%] left-[30%] z-25"></div>
+      <div className="absolute w-[140px] h-[110px] bg-[#8ae62e] opacity-60 blur-[90px] rounded-full top-[75%] left-[30%] z-25"></div>
+
       <Nav />
       <Image
         src={wallpaperHero}
         alt="wallpaper da sessao hero"
-        className="w-full h-full absolute object-cover inset-0 z-100 opacity-10"
+        className="w-full h-full absolute object-cover inset-0 -z-0 opacity-9"
       />
       <div className="flex flex-col justify-center items-center relative">
         <h1 className="text-white font-bold font-bebas text-5xl md:text-[96px] leading-non z-100">

@@ -4,7 +4,7 @@ import Image, { StaticImageData } from "next/image";
 type ContainerProps = { children: React.ReactNode };
 export const Container = ({ children }: ContainerProps) => {
   return (
-    <div className="w-[270px] min-h-[350px] flex flex-col gap-8 z-20">
+    <div className="w-[270px] min-h-[350px] flex flex-col gap-8 z-1200">
       {children}
     </div>
   );
@@ -35,7 +35,11 @@ export const ContainerContente = ({ children }: ContainerContenteProps) => {
 // Title Card
 type TitleProps = { title: string };
 export const Title = ({ title }: TitleProps) => {
-  return <h2 className="text-white uppercase font-semibold">{title}</h2>;
+  return (
+    <h2 className="text-white uppercase font-semibold flex gap-2 items-center">
+      {title}
+    </h2>
+  );
 };
 
 // Description Card

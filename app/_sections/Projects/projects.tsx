@@ -7,11 +7,13 @@ import imagemprojeto2 from "../../public/ncmfinder.png";
 import imagemprojeto3 from "../../public/rydeon.png";
 import imagemprojeto4 from "../../public/agendaypro.png";
 
+import wallpaperHero from "../../public/background-hero.png";
+
 const Projects = () => {
   return (
     <div className="w-screen h-fit flex flex-col justify-center items-center bg-black relative">
-      <div className="absolute w-[150px] h-[150px] bg-[#A5D872] opacity-100 blur-[100px] rounded-full top-[15%] left-[10%] z-10"></div>
-      <div className="absolute w-[120px] h-[100px] bg-[#A5D872] opacity-100 blur-[100px] rounded-full top-[75%] left-[75%] z-10"></div>
+      <div className="absolute w-[150px] h-[350px] bg-[#446523] opacity-90 blur-[100px] rounded-full top-[10%] left-[15%] z-25"></div>
+      <div className="absolute w-[120px] h-[110px] bg-[#95f635] opacity-100 blur-[100px] rounded-full top-[75%] left-[75%] z-25"></div>
 
       <Image
         className="mb-16 w-[350px] md:w-[600px]"
