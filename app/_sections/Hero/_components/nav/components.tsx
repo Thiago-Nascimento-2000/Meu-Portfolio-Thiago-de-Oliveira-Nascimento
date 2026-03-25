@@ -50,13 +50,14 @@ export const ContainerLinks = ({ children }: ContainerLinksProps) => {
 type linksType = {
   index: number;
   link: string;
+  href: string;
 };
 
 const links: linksType[] = [
-  { index: 1, link: "Home" },
-  { index: 2, link: "Projetos" },
-  { index: 3, link: "Sobre" },
-  { index: 4, link: "Skills" },
+  { index: 1, link: "Home", href: "#home" },
+  { index: 2, link: "Projetos", href: "#projetos" },
+  { index: 3, link: "Sobre", href: "#sobre" },
+  { index: 4, link: "Skills", href: "#skills" },
 ];
 
 export const LinksNav = () => {
@@ -65,7 +66,7 @@ export const LinksNav = () => {
       <li>
         <a
           className="text-[18px] border-b-2 border-transparent hover:border-b-2 hover:border-[#4FB401]"
-          href={link.link}
+          href={link.href}
         >
           {link.link}
         </a>

@@ -6,7 +6,10 @@ import wallpaperHero from "../../public/background-hero.png";
 
 const Hero = () => {
   return (
-    <section className="w-screen h-150 md:h-screen bg-black flex flex-col justify-center items-center z-50">
+    <section
+      id="home"
+      className="w-screen h-150 md:h-screen bg-black flex flex-col justify-center items-center z-50"
+    >
       <div className="absolute w-37.5 h-37.5 bg-[#9fff3f] opacity-100 blur-[120px] rounded-full top-[20%] left-[10%] z-25"></div>
       <div className="absolute w-25 h-25 bg-[#82f510] opacity-100 blur-[80px] rounded-full top-[30%] left-[80%] z-25"></div>
       <div className="absolute w-35 h-27.5 bg-[#8ae62e] opacity-100 blur-[90px] rounded-full top-[50%] left-[40%] z-25"></div>
@@ -35,17 +38,18 @@ const Hero = () => {
           DESENVOLVEDOR
         </h2>
       </div>
-
-      <div className="bg-[#222C3C] px-1 pb-2 pt-1 mt-2 rounded-xl flex gap-2 cursor-pointer z-100">
-        <button className="bg-[#A5D872] p-2 md:w-35.75 md:h-12.5 rounded-lg md:text-[20px] font-semibold cursor-pointer hover:bg-[#94cc5b] transition-all duration-150 shadow-md active:shadow-sm active:scale-95 active:translate-y-0.5">
-          SABER MAIS
-        </button>
-        <button
-          className="bg-[#A5D872] p-2 md:w-12.5 md:h-12.5 rounded-lg flex justify-center items-center cursor-pointer hover:bg-[#94cc5b] transition-all duration-150 shadow-md active:shadow-sm active:scale-95 active:translate-y-0.5"
-          aria-label="Botão para ir a sessão Sobre Mim"
-        >
-          <IoMdArrowForward size={24} aria-hidden={true} />
-        </button>
+      <div className="bg-[#222C3C] px-1 pb-2 pt-1 mt-2 rounded-xl z-100">
+        <a href="#sobre" className="flex gap-2 cursor-pointer">
+          <button className="bg-[#A5D872] p-2 md:w-35.75 md:h-12.5 rounded-lg md:text-[20px] font-semibold cursor-pointer hover:bg-[#94cc5b] transition-all duration-150 shadow-md active:shadow-sm active:scale-95 active:translate-y-0.5">
+            SABER MAIS
+          </button>
+          <button
+            className="bg-[#A5D872] p-2 md:w-12.5 md:h-12.5 rounded-lg flex justify-center items-center cursor-pointer hover:bg-[#94cc5b] transition-all duration-150 shadow-md active:shadow-sm active:scale-95 active:translate-y-0.5"
+            aria-label="Botão para ir a sessão Sobre Mim"
+          >
+            <IoMdArrowForward size={24} aria-hidden={true} />
+          </button>
+        </a>
       </div>
     </section>
   );

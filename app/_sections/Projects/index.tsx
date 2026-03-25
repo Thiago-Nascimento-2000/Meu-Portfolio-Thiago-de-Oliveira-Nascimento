@@ -9,7 +9,10 @@ import imagemprojeto4 from "../../public/agendaypro.png";
 
 const Projects = () => {
   return (
-    <section className="w-screen h-fit flex flex-col justify-center items-center bg-black relative">
+    <section
+      id="projetos"
+      className="w-screen h-fit flex flex-col justify-center items-center bg-black relative"
+    >
       <div className="absolute w-37.5 h-87.5 bg-[#446523] opacity-90 blur-[100px] rounded-full top-[10%] left-[15%] z-25"></div>
       <div className="absolute w-30 h-27.5 bg-[#95f635] opacity-100 blur-[100px] rounded-full top-[75%] left-[75%] z-25"></div>
 
