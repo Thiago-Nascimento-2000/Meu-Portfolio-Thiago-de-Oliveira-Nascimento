@@ -4,7 +4,7 @@ import Image, { StaticImageData } from "next/image";
 type ContainerProps = { children: React.ReactNode };
 export const Container = ({ children }: ContainerProps) => {
   return (
-    <div className="bg-[#222C3C] opacity-0 md:opacity-100 px-1 pt-1 pb-2 flex rounded-[20px] w-fit h-fit z-200 absolute top-0 mt-4">
+    <div className="bg-[#222C3C] hidden md:block px-1 pt-1 pb-2 rounded-[20px] w-fit h-fit z-200 absolute top-0 mt-4">
       {children}
     </div>
   );
