@@ -14,7 +14,7 @@ export const Container = ({ children }: ContainerProps) => {
 type NavProps = { children: React.ReactNode };
 export const Nav = ({ children }: ContainerProps) => {
   return (
-    <div className="flex justify-between px-2 items-center bg-[#D9D9D9] rounded-[15px] w-183.75 h-17.5">
+    <div className="flex justify-between px-2 items-center bg-[#D9D9D9] rounded-[15px] w-200 h-17.5">
       {children}
     </div>
   );
@@ -31,7 +31,7 @@ type NavLogoProps = { src: string | StaticImageData; alt: string };
 export const NavLogo = ({ src, alt }: NavLogoProps) => {
   return (
     <div className="flex items-center gap-2">
-      <Image src={src} alt={alt} width={90} />
+      <Image src={src} alt={alt} width={100} />
       <span className="text-2xl">|</span>
     </div>
   );
@@ -61,8 +61,8 @@ const links: linksType[] = [
 
 export const LinksNav = () => {
   return links.map((link) => (
-    <ul key={link.index}>
-      <li className="flex justify-center items-center">
+    <ul key={link.index} className="flex justify-center items-center">
+      <li>
         <a
           className="text-[18px] border-b-2 border-transparent hover:border-b-2 hover:border-[#4FB401]"
           href={link.link}
