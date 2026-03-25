@@ -22,14 +22,14 @@ const Skills = () => {
       <Image
         src={wallpaperHero}
         alt="wallpaper da sessao hero"
-        className="w-full h-full absolute -z-0 object-cover inset-0 opacity-9 scale-x-[-1]"
+        className="w-full h-full absolute z-0 object-cover inset-0 opacity-9 scale-x-[-1]"
       />
-      <div className="absolute w-[110px] h-[90px] bg-[#b2eb79] opacity-100 blur-[85px] rounded-full top-[30%] left-[80%] z-25"></div>
-      <div className="absolute w-[90px] h-[90px] bg-[#A5D872] opacity-100 blur-[80px] rounded-full top-[70%] left-[10%] z-25"></div>
-      <div className="absolute w-[90px] h-[90px] bg-[#acff58] opacity-100 blur-[80px] rounded-full top-[20%] left-[30%] z-25"></div>
+      <div className="absolute w-27.5 h-22.5 bg-[#b2eb79] opacity-100 blur-[85px] rounded-full top-[30%] left-[80%] z-25"></div>
+      <div className="absolute w-22.5 h-22.5 bg-[#A5D872] opacity-100 blur-[80px] rounded-full top-[70%] left-[10%] z-25"></div>
+      <div className="absolute w-22.5 h-22.5 bg-[#acff58] opacity-100 blur-[80px] rounded-full top-[20%] left-[30%] z-25"></div>
 
       <div className="flex flex-col gap-12 justify-center items-center z-50">
-        <div className="flex flex-col w-[310px] md:w-[650px]">
+        <div className="flex flex-col w-77.5 md:w-162.5">
           <h2 className="text-[#A5D872] text-[32px] font-bold text-left">
             Skills
           </h2>
@@ -52,8 +52,8 @@ const Skills = () => {
           <CardSkill src={logo_skills10} alt="Canva" />
         </div>
         <div className="w-full justify-start">
-          <div className="bg-[#222C3C] w-fit px-1 pb-2 pt-1 rounded-[12px] flex gap-2 cursor-pointer">
-            <button className="bg-[#A5D872] flex items-center p-2 w-fit h-[40px] z-30 rounded-[8px] md:text-[20px] font-semibold cursor-pointer hover:bg-[#94cc5b] transition-all duration-150 shadow-md active:shadow-sm active:scale-95 active:translate-y-[2px]">
+          <div className="bg-[#222C3C] w-fit px-1 pb-2 pt-1 rounded-xl flex gap-2 cursor-pointer">
+            <button className="bg-[#A5D872] flex items-center p-2 w-fit h-10 z-30 rounded-lg md:text-[20px] font-semibold cursor-pointer hover:bg-[#94cc5b] transition-all duration-150 shadow-md active:shadow-sm active:scale-95 active:translate-y-0.5">
               CONTATO
             </button>
           </div>

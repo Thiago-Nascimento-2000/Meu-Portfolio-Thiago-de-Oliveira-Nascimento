@@ -14,7 +14,7 @@ export const Container = ({ children }: ContainerProps) => {
 type NavProps = { children: React.ReactNode };
 export const Nav = ({ children }: ContainerProps) => {
   return (
-    <div className="flex justify-between px-2 items-center bg-[#D9D9D9] rounded-[15px] w-[735px] h-[70px]">
+    <div className="flex justify-between px-2 items-center bg-[#D9D9D9] rounded-[15px] w-183.75 h-17.5">
       {children}
     </div>
   );
@@ -61,14 +61,16 @@ const links: linksType[] = [
 
 export const LinksNav = () => {
   return links.map((link) => (
-    <li className="flex justify-center items-center" key={link.index}>
-      <a
-        className="text-[18px] border-b-2 border-transparent hover:border-b-2 hover:border-[#4FB401]"
-        href={link.link}
-      >
-        {link.link}
-      </a>
-    </li>
+    <ul key={link.index}>
+      <li className="flex justify-center items-center">
+        <a
+          className="text-[18px] border-b-2 border-transparent hover:border-b-2 hover:border-[#4FB401]"
+          href={link.link}
+        >
+          {link.link}
+        </a>
+      </li>
+    </ul>
   ));
 };
 
@@ -87,8 +89,8 @@ type buttonProps = {
 
 export const Button = ({ textButton }: buttonProps) => {
   return (
-    <div className="bg-[#222C3C] px-1 pb-2 pt-1 rounded-[12px] flex gap-2 cursor-pointer">
-      <button className="bg-[#A5D872] flex items-center p-2 w-fit h-[40px] rounded-[8px] md:text-[20px] font-semibold cursor-pointer hover:bg-[#94cc5b] transition-all duration-150 shadow-md active:shadow-sm active:scale-95 active:translate-y-[2px]">
+    <div className="bg-[#222C3C] px-1 pb-2 pt-1 rounded-xl flex gap-2 cursor-pointer">
+      <button className="bg-[#A5D872] flex items-center p-2 w-fit h-10 rounded-lg md:text-[20px] font-semibold cursor-pointer hover:bg-[#94cc5b] transition-all duration-150 shadow-md active:shadow-sm active:scale-95 active:translate-y-0.5">
         {textButton}
       </button>
     </div>

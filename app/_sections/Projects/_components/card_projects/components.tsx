@@ -4,7 +4,7 @@ import Image, { StaticImageData } from "next/image";
 type ContainerProps = { children: React.ReactNode };
 export const Container = ({ children }: ContainerProps) => {
   return (
-    <div className="w-[270px] min-h-[350px] flex flex-col gap-8 z-1200">
+    <div className="w-67.5 min-h-87.5 flex flex-col gap-8 z-1200">
       {children}
     </div>
   );
@@ -17,7 +17,7 @@ type CardImage = {
 };
 export const CardImage = ({ src, alt }: CardImage) => {
   return (
-    <div className="rounded-[18px] hover:cursor-pointer h-[200px] bg-[#222C3C]/50 object-cover object-top z-180 overflow-hidden">
+    <div className="rounded-[18px] hover:cursor-pointer h-50 bg-[#222C3C]/50 object-cover object-top z-180 overflow-hidden">
       <Image
         className="transaction duration-4500 hover:translate-y-[-40%]"
         src={src}
@@ -96,8 +96,8 @@ type TagProps = {
 
 export const Tag = ({ tagname }: TagProps) => {
   return (
-    <div className="bg-[#222C3C] px-0.5 pt-0.5 pb-1 rounded-[8px]">
-      <span className="w-fit h-[24px] px-2 bg-[#A5D872] flex justify-center items-center rounded-[5px]">
+    <div className="bg-[#222C3C] px-0.5 pt-0.5 pb-1 rounded-lg">
+      <span className="w-fit h-6 px-2 bg-[#A5D872] flex justify-center items-center rounded-[5px]">
         <h2 className="text-black text-[13px] font-semibold uppercase">
           {tagLabels[tagname]}
         </h2>

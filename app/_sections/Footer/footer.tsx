@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
-    <footer className="w-screen p-6  h-[150px] flex justify-center">
-      <div className="border-1 border-[#A5D872] rounded-[8px] w-[1388px] h-[110px] flex flex-col md:flex-row p-2 justify-between px-12 items-center">
+    <footer className="w-screen p-6  h-37.5 flex justify-center">
+      <div className="border border-[#A5D872] rounded-lg w-347 h-27.5 flex flex-col md:flex-row p-2 justify-between px-12 items-center">
         <div>
           <h2 className="text-white flex flex-col lg:flex-row">
             Desing e desenvolvimento feito por

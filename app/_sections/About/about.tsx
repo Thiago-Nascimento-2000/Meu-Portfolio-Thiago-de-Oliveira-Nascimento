@@ -7,15 +7,15 @@ import personagem2 from "../../public/personagem2.webp";
 const About = () => {
   return (
     <section className="w-screen bg-black flex flex-col justify-center items-center relative pb-24">
-      <div className="absolute w-[150px] h-[150px] bg-[#a6f655] opacity-100 blur-[120px] rounded-full top-[40%] left-[70%] z-25"></div>
+      <div className="absolute w-37.5 h-37.5 bg-[#a6f655] opacity-100 blur-[120px] rounded-full top-[40%] left-[70%] z-25"></div>
       <Image
-        className="relative top-[540px] right-[160px] md:top-[540px] md:right-[160px] lg:top-[570px] lg:right-[450px]"
+        className="relative top-135 right-40 md:top-135 md:right-40 lg:top-142.5 lg:right-112.5"
         src={personagem1}
         alt="personagem 1 em desenho segurando lampada e notebook"
         width={90}
       />
       <Image
-        className="relative top-[150px] left-[150px] md:top-[150px] md:left-[150px] lg:top-[185px] lg:left-[-135px]"
+        className="relative top-37.5 left-37.5 md:top-37.5 md:left-37.5 lg:top-46.25 lg:-left-33.75"
         src={personagem2}
         alt="personagem 2 acenando"
         width={90}
@@ -27,12 +27,12 @@ const About = () => {
       <div className="mt-16">
         <div className="flex w-screen justify-center items-center gap-32 flex-wrap">
           <Image
-            className="w-[300px]"
+            className="w-75"
             src={perfil}
             alt="foto de perfil do Thiago Nascimento"
           />
           <div>
-            <p className="w-[380px] md:w-[450px] text-white font-semibold ">
+            <p className="w-95 md:w-112.5 text-white font-semibold ">
               Olá, eu sou o Thiago Desenvolvedor Frontend, Com um forte foco no
               desenvolvimento voltado para UI/UX, eu combino design e tecnologia
               para criar projetos coesos e impactantes que ajudam empresas a se

@@ -1,5 +1,5 @@
 import { StaticImageData } from "next/image";
-import * as Card from "./components";
+import * as Card from "./Components";
 
 type TagType =
   | "css"
