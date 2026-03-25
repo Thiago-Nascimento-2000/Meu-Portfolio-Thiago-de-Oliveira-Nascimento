@@ -1,8 +1,8 @@
-import Hero from "./_sections/Hero/Hero";
-import Projects from "./_sections/Projects/Projects";
-import About from "./_sections/About/About";
-import Skills from "./_sections/Skills/Skills";
-import Footer from "./_sections/Footer/Footer";
+import Hero from "./_sections/Hero";
+import Projects from "./_sections/Projects";
+import About from "./_sections/About";
+import Skills from "./_sections/Skills";
+import Footer from "./_sections/Footer";
 
 export default function Home() {
   return (

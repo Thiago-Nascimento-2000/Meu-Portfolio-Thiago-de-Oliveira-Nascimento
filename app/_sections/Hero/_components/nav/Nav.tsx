@@ -1,4 +1,4 @@
-import * as Card from "./Components";
+import * as Card from "./components";
 
 import logo from "../../../../public/logothiago.webp";
 

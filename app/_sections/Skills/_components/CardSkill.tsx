@@ -1,5 +1,5 @@
 import { StaticImageData } from "next/image";
-import * as Card from "./Components";
+import * as Card from "./components";
 import Tooltip from "./ToolTip";
 
 type CardSkillProps = {
