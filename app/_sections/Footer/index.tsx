@@ -1,17 +1,20 @@
 const Footer = () => {
   return (
-    <footer className="w-screen p-6 h-37.5 flex justify-center">
-      <div className="border border-[#A5D872] rounded-lg w-347 h-27.5 flex flex-col md:flex-row p-2 justify-between px-12 items-center">
+    <footer className="w-full h-36 px-4 mt-16 mb-8 flex flex-col justify-end">
+      <div className="border h-36 md:h-24 border-[#A5D872] rounded-lg p-4 flex flex-wrap sm:flex-nowrap gap-4 justify-between items-center">
         <div>
-          <h2 className="text-white flex flex-col lg:flex-row">
-            Desing e desenvolvimento feito por
-            <span className="text-[#A5D872] flex justify-center ml-1">
-              Thiago O. Nascimento
+          <h2 className="text-white text-center flex flex-wrap justify-center">
+            Desing e desenvolvimento por
+            <span className="text-[#A5D872] ml-1.5">
+              Thiago de O. Nascimento
             </span>
           </h2>
         </div>
         <div>
-          <h2 className="text-white">© 2025 thiago.rydeon.com.br</h2>
+          <h2 className="text-white text-center flex flex-wrap justify-center">
+            © 2025 Thiago de Oliveira Nascimento.
+            <span className="ml-1.5">Todos os direitos reservados.</span>
+          </h2>
         </div>
       </div>
     </footer>

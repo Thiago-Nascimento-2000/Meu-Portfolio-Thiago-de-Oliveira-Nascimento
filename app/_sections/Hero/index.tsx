@@ -3,6 +3,7 @@ import Nav from "./_components/nav/Nav";
 import { IoMdArrowForward } from "react-icons/io";
 
 import wallpaperHero from "../../public/background-hero.png";
+import NavMobile from "./_components/nav_mobile/NavMobile";
 
 const Hero = () => {
   return (
@@ -18,6 +19,7 @@ const Hero = () => {
       <div className="absolute w-35 h-27.5 bg-[#8ae62e] opacity-60 blur-[90px] rounded-full top-[75%] left-[30%] z-25"></div>
 
       <Nav />
+      <NavMobile size={48} aria="Botão para abrir o menu mobile" />
       <Image
         src={wallpaperHero}
         alt="wallpaper da sessao hero"
