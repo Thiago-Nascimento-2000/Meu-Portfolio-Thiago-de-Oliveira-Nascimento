@@ -35,7 +35,7 @@ const About = () => {
             alt="foto de perfil do Thiago Nascimento"
           />
           <div>
-            <p className="w-95 md:w-112.5 text-white font-semibold ">
+            <p className="w-85 md:w-112.5 text-white font-semibold ">
               Olá, eu sou o Thiago Desenvolvedor Frontend, Com um forte foco no
               desenvolvimento voltado para UI/UX, eu combino design e tecnologia
               para criar projetos coesos e impactantes que ajudam empresas a se

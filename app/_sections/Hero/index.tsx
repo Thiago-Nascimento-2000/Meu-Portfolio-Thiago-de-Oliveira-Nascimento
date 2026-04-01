@@ -25,8 +25,8 @@ const Hero = () => {
         alt="wallpaper da sessao hero"
         className="w-full h-full absolute object-cover inset-0 z-0 opacity-9"
       />
-      <div className="flex flex-col justify-center items-center relative">
-        <h1 className="text-white font-bold font-bebas text-5xl md:text-[96px] leading-non z-100">
+      <div className="flex flex-col justify-center items-center gap-2 md:gap-0 relative">
+        <h1 className="text-white font-bold font-bebas text-5xl text-center md:text-[96px] leading-non z-100">
           THIAGO DE O. NASCIMENTO
         </h1>
 
