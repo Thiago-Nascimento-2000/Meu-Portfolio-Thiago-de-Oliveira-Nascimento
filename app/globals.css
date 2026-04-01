@@ -6,6 +6,10 @@
   }
 }
 
+body, html {
+  overflow-x: hidden;
+}
+
 html {
   background-color: black;
   scroll-behavior: smooth;
