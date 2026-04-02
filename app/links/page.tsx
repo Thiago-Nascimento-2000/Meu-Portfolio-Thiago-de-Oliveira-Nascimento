@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 import image from "../public/perfil.png";
 import { FaArrowLeft, FaGithub, FaLinkedin, FaYoutube } from "react-icons/fa";
@@ -7,12 +8,14 @@ import { MdWebAsset } from "react-icons/md";
 const Links = () => {
   return (
     <main className="flex h-screen flex-col justify-center items-center bg-gradient-to-t from-[#040504] 0% to-[#79ae6b] 100%">
-      <span className="bg-white/35 p-2 rounded-full fixed top-5 left-5 hover:cursor-pointer hover:bg-white/30">
-        <FaArrowLeft className="text-white" size={24} />
-      </span>
+      <Link href="/">
+        <span className="bg-white/35 p-2 rounded-full fixed top-5 left-5 hover:cursor-pointer hover:bg-white/30">
+          <FaArrowLeft className="text-white" size={24} />
+        </span>
+      </Link>
       <div className="relative top-10 flex flex-col items-center">
         <span className="text-white">Links</span>
-        <div className="w-fit border-gray-300 border-2 border-dashed flex justify-center px-4 py-2">
+        <div className="w-fit border-[#A5D872] border-2 border-dashed flex justify-center px-4 py-2">
           <h1 className="text-white font-semibold text-5xl [text-shadow:1px_1px_5px_rgba(0, 0, 0, 0.7)]">
             Thiago
           </h1>

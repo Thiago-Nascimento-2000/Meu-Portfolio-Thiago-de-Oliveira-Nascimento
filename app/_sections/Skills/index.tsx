@@ -1,5 +1,6 @@
 import CardSkill from "./_components/CardSkill";
 import Image from "next/image";
+import Link from "next/link";
 
 import logo_skills1 from "../../public/logo_vscode.png";
 import logo_skills2 from "../../public/next-js-logo-png_seeklogo-321806 2.png";
@@ -56,9 +57,11 @@ const Skills = () => {
         </div>
         <div className="w-full justify-start">
           <div className="bg-[#222C3C] w-fit px-1 pb-2 pt-1 rounded-xl flex gap-2 cursor-pointer">
-            <button className="bg-[#A5D872] flex items-center p-2 w-fit h-10 z-30 rounded-lg md:text-[20px] font-semibold cursor-pointer hover:bg-[#94cc5b] transition-all duration-150 shadow-md active:shadow-sm active:scale-95 active:translate-y-0.5">
-              CONTATO
-            </button>
+            <Link href="/links">
+              <button className="bg-[#A5D872] flex items-center p-2 w-fit h-10 z-30 rounded-lg md:text-[20px] font-semibold cursor-pointer hover:bg-[#94cc5b] transition-all duration-150 shadow-md active:shadow-sm active:scale-95 active:translate-y-0.5">
+                CONTATO
+              </button>
+            </Link>
           </div>
         </div>
       </div>
