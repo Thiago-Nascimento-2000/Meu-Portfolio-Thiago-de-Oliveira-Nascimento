@@ -9,7 +9,7 @@ const Links = () => {
   return (
     <main className="flex h-screen flex-col justify-center items-center bg-gradient-to-t from-[#040504] 0% to-[#79ae6b] 100%">
       <Link href="/">
-        <span className="bg-white/35 p-2 rounded-full fixed top-5 left-5 hover:cursor-pointer hover:bg-white/30">
+        <span className="bg-[#A5D872] p-2 rounded-full fixed top-5 left-5 hover:cursor-pointer hover:bg-[#A5D872]/80">
           <FaArrowLeft className="text-white" size={24} />
         </span>
       </Link>
@@ -46,13 +46,11 @@ const Links = () => {
       </div>
 
       <section className="mt-8 flex flex-col gap-4">
-        <div className="bg-white/35 w-100 h-fit rounded-2xl p-4 flex flex-col justify-center">
-          <h2 className="text-2xl">Lorem</h2>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
-        <div className="bg-white/35 w-100 h-fit rounded-2xl p-4 flex flex-col justify-center">
-          <h2 className="text-2xl">Lorem</h2>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <div className="bg-[#222C3C] px-1 pb-2 pt-1 rounded-xl flex gap-2 cursor-pointer">
+          <div className="bg-[#A5D872] flex flex-col p-2 w-full h-fit rounded-lg md:text-[20px] font-semibold cursor-pointer hover:bg-[#94cc5b] transition-all duration-150 shadow-md active:shadow-sm active:scale-95 active:translate-y-0.5">
+            <h2 className="text-2xl">Lorem</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
         </div>
       </section>
     </main>
