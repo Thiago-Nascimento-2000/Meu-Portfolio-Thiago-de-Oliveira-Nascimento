@@ -1,5 +1,6 @@
 import Image, { StaticImageData } from "next/image";
 import links from "./linksNavType";
+
 // Container
 type ContainerProps = { children: React.ReactNode };
 export const Container = ({ children }: ContainerProps) => {

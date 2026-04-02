@@ -45,7 +45,11 @@ const Links = () => {
         />
       </div>
 
-      <section className="mt-8">
+      <section className="mt-8 flex flex-col gap-4">
+        <div className="bg-white/35 w-100 h-fit rounded-2xl p-4 flex flex-col justify-center">
+          <h2 className="text-2xl">Lorem</h2>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
         <div className="bg-white/35 w-100 h-fit rounded-2xl p-4 flex flex-col justify-center">
           <h2 className="text-2xl">Lorem</h2>
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>

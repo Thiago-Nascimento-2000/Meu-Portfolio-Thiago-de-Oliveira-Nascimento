@@ -1,4 +1,5 @@
 import * as Card from "./components";
+import Link from "next/link";
 
 import logo from "../../../../public/logothiago.webp";
 
@@ -16,7 +17,9 @@ const Nav = () => {
           </Card.ContainerLinks>
         </Card.ContainerNav>
         <Card.ContainerButtonNav>
-          <Card.Button textButton="Contatos" />
+          <Link href="/links">
+            <Card.Button textButton="Contatos" />
+          </Link>
           <Card.Button textButton="Download CV" />
         </Card.ContainerButtonNav>
       </Card.Nav>
