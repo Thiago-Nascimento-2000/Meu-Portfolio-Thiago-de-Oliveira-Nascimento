@@ -12,7 +12,7 @@ const About = () => {
     >
       <div className="absolute w-37.5 h-37.5 bg-[#a6f655] opacity-100 blur-[120px] rounded-full top-[40%] left-[70%] z-25"></div>
       <Image
-        className="relative top-135 right-40 md:top-135 md:right-40 lg:top-142.5 lg:right-112.5"
+        className="relative top-135 right-40 md:top-135 md:right-40 lg:top-142.5 lg:right-112.5 transition-all duration-300 animation-fade-in"
         src={personagem1}
         alt="personagem 1 em desenho segurando lampada e notebook"
         width={90}

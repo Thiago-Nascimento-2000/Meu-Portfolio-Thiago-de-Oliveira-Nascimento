@@ -4,7 +4,7 @@ import Image, { StaticImageData } from "next/image";
 type ContainerProps = { children: React.ReactNode };
 export const Container = ({ children }: ContainerProps) => {
   return (
-    <div className="w-22.5 h-22.5 bg-white rounded-2xl flex justify-center items-center hover:cursor-pointer">
+    <div className="w-22.5 h-22.5 bg-white rounded-2xl flex justify-center items-center hover:cursor-pointer transition-all duration-500 hover:scale-110">
       {children}
     </div>
   );

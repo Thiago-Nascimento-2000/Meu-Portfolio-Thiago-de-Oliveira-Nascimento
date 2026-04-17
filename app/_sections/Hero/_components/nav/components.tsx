@@ -52,7 +52,7 @@ export const LinksNav = () => {
     <ul key={link.index} className="flex justify-center items-center">
       <li>
         <a
-          className="text-[18px] border-b-2 border-transparent hover:border-b-2 hover:border-[#4FB401]"
+          className="text-[18px] transition-all duration-300 border-b-2 border-transparent hover:border-b-2 hover:border-[#4FB401]"
           href={link.href}
         >
           {link.link}
@@ -78,7 +78,7 @@ type buttonProps = {
 export const Button = ({ textButton }: buttonProps) => {
   return (
     <div className="bg-[#222C3C] px-1 pb-2 pt-1 rounded-xl flex gap-2 cursor-pointer">
-      <button className="bg-[#A5D872] flex items-center p-2 w-fit h-10 rounded-lg md:text-[20px] font-semibold cursor-pointer hover:bg-[#94cc5b] transition-all duration-150 shadow-md active:shadow-sm active:scale-95 active:translate-y-0.5">
+      <button className="bg-[#A5D872] flex items-center p-2 w-fit h-10 rounded-lg md:text-[20px] font-semibold cursor-pointer active:bg-[#7dab50] transition-all duration-500 shadow-md hover:shadow-sm hover:scale-95 hover:translate-y-0.5">
         {textButton}
       </button>
     </div>

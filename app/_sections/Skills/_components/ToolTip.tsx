@@ -2,7 +2,7 @@ type TooltipProps = { text: string };
 const Tooltip = ({ text }: TooltipProps) => {
   return (
     <div className="relative inline-block">
-      <div className="bg-gray-200 px-3 py-1.5 rounded-[4px] text-sm font-medium whitespace-nowrap">
+      <div className="bg-gray-200 px-3 py-1.5 rounded-sm text-sm font-medium whitespace-nowrap">
         {text}
       </div>
 

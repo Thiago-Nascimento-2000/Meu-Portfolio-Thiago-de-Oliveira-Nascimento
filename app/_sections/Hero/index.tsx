@@ -42,11 +42,11 @@ const Hero = () => {
       </div>
       <div className="bg-[#222C3C] px-1 pb-2 pt-1 mt-2 rounded-xl z-100">
         <a href="#sobre" className="flex gap-2 cursor-pointer">
-          <button className="bg-[#A5D872] p-2 md:w-35.75 md:h-12.5 rounded-lg md:text-[20px] font-semibold cursor-pointer hover:bg-[#94cc5b] transition-all duration-150 shadow-md active:shadow-sm active:scale-95 active:translate-y-0.5">
+          <button className="bg-[#A5D872] p-2 md:w-35.75 md:h-12.5 rounded-lg md:text-[20px] font-semibold cursor-pointer active:bg-[#7dab50] transition-all duration-500 shadow-md hover:shadow-sm hover:scale-95 hover:translate-y-0.5">
             SABER MAIS
           </button>
           <button
-            className="bg-[#A5D872] p-2 md:w-12.5 md:h-12.5 rounded-lg flex justify-center items-center cursor-pointer hover:bg-[#94cc5b] transition-all duration-150 shadow-md active:shadow-sm active:scale-95 active:translate-y-0.5"
+            className="bg-[#A5D872] p-2 md:w-12.5 md:h-12.5 rounded-lg flex justify-center items-center cursor-pointer active:bg-[#7dab50] transition-all duration-500 shadow-md hover:shadow-sm hover:scale-95 hover:translate-y-0.5"
             aria-label="Botão para ir a sessão Sobre Mim"
           >
             <IoMdArrowForward size={24} aria-hidden={true} />

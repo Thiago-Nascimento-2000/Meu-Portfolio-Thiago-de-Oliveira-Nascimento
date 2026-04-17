@@ -58,7 +58,7 @@ const Skills = () => {
         <div className="w-full justify-start">
           <div className="bg-[#222C3C] w-fit px-1 pb-2 pt-1 rounded-xl flex gap-2 cursor-pointer">
             <Link href="/links">
-              <button className="bg-[#A5D872] flex items-center p-2 w-fit h-10 z-30 rounded-lg md:text-[20px] font-semibold cursor-pointer hover:bg-[#94cc5b] transition-all duration-150 shadow-md active:shadow-sm active:scale-95 active:translate-y-0.5">
+              <button className="bg-[#A5D872] flex items-center p-2 w-fit h-10 z-30 rounded-lg md:text-[20px] font-semibold cursor-pointer active:bg-[#7dab50] transition-all duration-500 shadow-md hover:shadow-sm hover:scale-95 hover:translate-y-0.5">
                 CONTATO
               </button>
             </Link>
