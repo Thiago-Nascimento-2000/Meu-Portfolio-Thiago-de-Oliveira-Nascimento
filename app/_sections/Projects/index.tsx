@@ -1,11 +1,11 @@
 import Image from "next/image";
 import CardProjects from "./_components/card_projects/CardProjects";
 
-import titleProjetos from "../../public/titleprojetos.png";
-import imagemprojeto1 from "../../public/screencapture-pokedextor-vercel-app-2026-03-20-12_57_25.png";
-import imagemprojeto2 from "../../public/ncmfinder.png";
-import imagemprojeto3 from "../../public/rydeon.png";
-import imagemprojeto4 from "../../public/agendaypro.png";
+import titleProjetos from "../../../public/title/titleprojetos.webp";
+import imagemprojeto1 from "../../../public/projects/screencapture-pokedextor-vercel-app-2026-03-20-12_57_25.webp";
+import imagemprojeto2 from "../../../public/projects/ncmfinder.webp";
+import imagemprojeto3 from "../../../public/projects/rydeon.webp";
+import imagemprojeto4 from "../../../public/projects/agendaypro.webp";
 
 const Projects = () => {
   return (

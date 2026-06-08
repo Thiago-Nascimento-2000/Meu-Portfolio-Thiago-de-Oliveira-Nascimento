@@ -1,8 +1,8 @@
 import Image from "next/image";
 
-import perfil from "../../public/perfil.png";
-import personagem1 from "../../public/personagem1.webp";
-import personagem2 from "../../public/personagem2.webp";
+import perfil from "../../../public/about/perfil.webp";
+import personagem1 from "../../../public/about/personagem1.webp";
+import personagem2 from "../../../public/about/personagem2.webp";
 
 const About = () => {
   return (

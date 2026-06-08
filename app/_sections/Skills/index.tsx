@@ -2,20 +2,20 @@ import CardSkill from "./_components/CardSkill";
 import Image from "next/image";
 import Link from "next/link";
 
-import logo_skills1 from "../../public/logo_vscode.png";
-import logo_skills2 from "../../public/next-js-logo-png_seeklogo-321806 2.png";
-import logo_skills3 from "../../public/novo1691829400logo-canva-png 1 (1).webp";
-import logo_skills4 from "../../public/Tailwind_CSS_Logo.svg 1.png";
-import logo_skills5 from "../../public/novo1691829400logo-canva-png 1.webp";
-import logo_skills6 from "../../public/Typescript_logo_2020.svg 1.png";
-import logo_skills7 from "../../public/badge-css-3-512 1.png";
-import logo_skills8 from "../../public/free-html-5-1-1175208 1.png";
-import logo_skills9 from "../../public/React-icon.svg 1.png";
-import logo_skills10 from "../../public/1691829400logo-canva-png 1.png";
-import logo_skills11 from "../../public/nodejs.png";
-import logo_skills12 from "../../public/styled-components 1.png";
+import logo_skills1 from "../../../public/skills/logo_vscode.webp";
+import logo_skills2 from "../../../public/skills/next-js-logo-png_seeklogo-321806 2.webp";
+import logo_skills3 from "../../../public/skills/novo1691829400logo-canva-png 1 (1).webp";
+import logo_skills4 from "../../../public/skills/Tailwind_CSS_Logo.svg 1.webp";
+import logo_skills5 from "../../../public/skills/novo1691829400logo-canva-png 1.webp";
+import logo_skills6 from "../../../public/skills/Typescript_logo_2020.svg 1.webp";
+import logo_skills7 from "../../../public/skills/badge-css-3-512 1.webp";
+import logo_skills8 from "../../../public/skills/free-html-5-1-1175208 1.webp";
+import logo_skills9 from "../../../public/skills/React-icon.svg 1.webp";
+import logo_skills10 from "../../../public/skills/1691829400logo-canva-png 1.webp";
+import logo_skills11 from "../../../public/skills/nodejs.webp";
+import logo_skills12 from "../../../public/skills/styled-components 1.webp";
 
-import wallpaperHero from "../../public/background-hero.png";
+import wallpaperHero from "../../../public/backgrounds/background-hero.webp";
 
 const Skills = () => {
   return (

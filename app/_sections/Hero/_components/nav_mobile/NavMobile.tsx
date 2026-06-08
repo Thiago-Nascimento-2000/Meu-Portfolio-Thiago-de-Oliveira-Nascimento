@@ -1,30 +1,50 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import * as Card from "./components";
 
 type NavMobileProps = { size: number; aria: string };
 const NavMobile = ({ size, aria }: NavMobileProps) => {
-  const [isHidden, setIsHidden] = useState<boolean>(true);
+  const [isOpen, setIsOpen] = useState<boolean>(false);
 
-  const HandleCloseNavMobile = () => {
-    setIsHidden(true);
+  const handleCloseNavMobile = () => {
+    setIsOpen(false);
   };
 
-  const HandleOpenNavMobile = () => {
-    setIsHidden(false);
+  const handleOpenNavMobile = () => {
+    setIsOpen(true);
   };
+
+  useEffect(() => {
+    if (!isOpen) return;
+
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") handleCloseNavMobile();
+    };
+
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    window.addEventListener("keydown", handleKeyDown);
+
+    return () => {
+      document.body.style.overflow = previousOverflow;
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [isOpen]);
 
   return (
     <>
-      <Card.Icon
+      <Card.MenuButton
         size={size}
         aria={aria}
-        onClick={() => HandleOpenNavMobile()}
+        isOpen={isOpen}
+        onClick={handleOpenNavMobile}
       />
-      <Card.Container isHidden={isHidden}>
-        <Card.ButtonClose onClick={() => HandleCloseNavMobile()} />
-        <Card.NavContent onClick={() => HandleCloseNavMobile()} />
+      <Card.Container isOpen={isOpen} onClose={handleCloseNavMobile}>
+        <Card.NavContent
+          onClose={handleCloseNavMobile}
+          onNavigate={handleCloseNavMobile}
+        />
       </Card.Container>
     </>
   );

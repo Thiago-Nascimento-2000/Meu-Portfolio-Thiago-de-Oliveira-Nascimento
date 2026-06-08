@@ -2,14 +2,14 @@ import Image from "next/image";
 import Nav from "./_components/nav/Nav";
 import { IoMdArrowForward } from "react-icons/io";
 
-import wallpaperHero from "../../public/background-hero.png";
+import wallpaperHero from "../../../public/backgrounds/background-hero.webp";
 import NavMobile from "./_components/nav_mobile/NavMobile";
 
 const Hero = () => {
   return (
     <section
       id="home"
-      className="w-screen h-150 md:h-screen bg-black flex flex-col justify-center items-center z-50"
+      className="relative w-screen h-150 md:h-screen bg-black flex flex-col justify-center items-center z-50 overflow-hidden"
     >
       <div className="absolute w-37.5 h-37.5 bg-[#9fff3f] opacity-100 blur-[120px] rounded-full top-[20%] left-[10%] z-25"></div>
       <div className="absolute w-25 h-25 bg-[#82f510] opacity-100 blur-[80px] rounded-full top-[30%] left-[80%] z-25"></div>
@@ -19,11 +19,11 @@ const Hero = () => {
       <div className="absolute w-35 h-27.5 bg-[#8ae62e] opacity-60 blur-[90px] rounded-full top-[75%] left-[30%] z-25"></div>
 
       <Nav />
-      <NavMobile size={48} aria="Botão para abrir o menu mobile" />
+      <NavMobile size={34} aria="Botão para abrir o menu mobile" />
       <Image
         src={wallpaperHero}
         alt="wallpaper da sessao hero"
-        className="w-full h-full absolute object-cover inset-0 z-0 opacity-9"
+        className="pointer-events-none w-full h-full absolute object-cover inset-0 z-0 opacity-9"
       />
       <div className="flex flex-col justify-center items-center gap-2 md:gap-0 relative">
         <h1 className="text-white font-bold font-bebas text-5xl text-center md:text-[96px] leading-non z-100">

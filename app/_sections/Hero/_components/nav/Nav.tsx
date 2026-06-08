@@ -1,7 +1,7 @@
 import * as Card from "./components";
 import Link from "next/link";
 
-import logo from "../../../../public/logothiago.webp";
+import logo from "../../../../../public/nav/logothiago.webp";
 
 const Nav = () => {
   return (
