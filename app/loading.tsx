@@ -1,11 +1,15 @@
-import { FaCircleNotch } from "react-icons/fa";
-
-const Loading = async () => {
+const Loading = () => {
   return (
-    <div className="w-screen h-screen flex justify-center items-center">
-      <h2 className="text-white text-5xl font-bold">
-        <FaCircleNotch size={45} className="animate-spin text-[#A5D872]" />
-      </h2>
+    <div
+      className="fixed inset-0 z-[9999] flex h-dvh w-screen items-center justify-center bg-black/75 backdrop-blur-sm"
+      role="status"
+      aria-label="Carregando página"
+    >
+      <div className="relative flex h-24 w-24 items-center justify-center">
+        <div className="absolute h-full w-full rounded-full border-4 border-[#A5D872]/20" />
+        <div className="absolute h-full w-full animate-spin rounded-full border-4 border-transparent border-t-[#A5D872] border-r-[#A5D872]" />
+        <span className="sr-only">Carregando...</span>
+      </div>
     </div>
   );
 };
